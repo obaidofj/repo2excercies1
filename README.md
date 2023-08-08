@@ -38,13 +38,19 @@ You live in your own repository. There is a file called `file.txt`.
     done
 
 6. What does `git diff` tell you?
+    is blank and this tells me that there is difference between first in the working area
+
 7. What does `git diff --staged` tell you?
+    Tells me that there is difference between first version and second version of the file
+
 8. Overwrite the content in `file.txt`: `echo 3 > file.txt` to change the state of your file in the working directory (or `sc file.txt '3'` in PowerShell).
+    done
+
 9. What does `git diff` tell you?
-    Tells me no changes in the working directory in files that are not added
+    Tells me that there is difference between first version and second version of the file
 
 10. What does `git diff --staged` tell you?
-    Tells me that there is difference between first version and second version of the file that added to the staging area
+    is blank and this tells me that there is difference between first in staging area
 
 11. Explain what is happening
     we made change to the file.txt in the staging area then it is marked as there is diff between first state and second state
@@ -58,15 +64,29 @@ You live in your own repository. There is a file called `file.txt`.
 
 14. What does `git status` tell you now?
     Tells me that it is now modified
-    
+
 15. Stage the change and make a commit
+    done
+
 16. What does the log look like?
+    The log shows that commit happen in which branch and its id , with summary about no of changed files and total insertion 
+    
 17. Overwrite the content in `file.txt`: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
+    Done
 18. What is the content of `file.txt`?
+    4
+
 19. What does `git status` tell us?
+    Tell us that tow files are modified this Readme file and file.txt file
+
 20. Run `git restore file.txt`
+    done
+
 21. What is the content of `file.txt`?
+    2
+
 22. What does `git status` tell us?
+    that only Readme file is modified
 
 ## Useful commands
 
